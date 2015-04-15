@@ -1,0 +1,38 @@
+@import "mytheme.scss";
+@import "addons.scss";
+
+// This file prefixes all rules with the theme name to avoid causing conflicts with other themes.
+// The actual styles should be defined in mytheme.scss
+
+.mytheme {
+  @include addons;
+  @include mytheme;
+  
+	.v-panel-orange{
+		border-style:solid;
+		border-width:thick;
+		border-color:orange;
+	}
+	
+	.v-panel-green{
+		border-style:solid;
+		border-width:thick;
+		border-color:green;
+	}
+	
+	.v-csslayout{
+		background-color:#82CAFF;
+		focusColor:#ffffff;
+		font-size:20px;
+		fontFamily:sans-serif;
+		float:left;
+		border:1px solid;
+		gradient:false;
+		shadow:false;
+	}
+	
+	.anchorContainer{
+    	float:left;
+    	clear:left;
+	}
+}
